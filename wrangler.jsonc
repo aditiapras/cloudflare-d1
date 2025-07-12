@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "cloudfull",
+  "compatibility_date": "2025-04-04",
+  "main": "./workers/app.ts",
+  "vars": {
+    "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare"
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "cloudfull",
+      "database_id": "db413bc7-df02-4ad6-a16e-671f1e56f28d",
+      "migrations_dir": "drizzle"
+    }
+  ]
+}
